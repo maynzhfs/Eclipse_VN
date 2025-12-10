@@ -1,7 +1,42 @@
 label s01_prologue:
     scene black
-    call narator("Selamat datang di Missing Red_Renpy Template")
-    call narator("Dengan template ini, kami berharap orang2 bisa membuat game vn dengan lebih mudah, dan tidak terlalu banyak code", duration=7.0)
-    call narator("Pertama2, user perlu memasukkan characternya di config/11_characters.rpy")
 
-    return
+    show bulan normal at pos_left
+    show bumi normal at pos_right
+
+    call setExpr(['bumi', 'bulan'], 'normal') 
+
+    call talk ('bulan', 'Bumi..', 'normal')
+
+    call talk ('bumi', 'ya?', 'normal')
+
+    call talk ('bulan', 'a-aku, aku mau nanya sesuatu')
+
+    call talk ('bumi', 'nanya sesuatu? nanya apa emang?')
+
+    call talk ('bulan', 'kita kan udah sering bareng, tugas bareng, main bareng, semuanya bareng...')
+    call talk ('bulan', 'Menurutmu, kita ini apa?')
+
+    call setExpr (['bulan'],'shock')
+    call talk ('bumi', 'yaa... kita temen')
+
+    call talk ('bulan', 'ga bisa kah lebih dari itu?', 'sad')
+
+    call talk ('bumi', 'maaf Bulan, tapi aku gabisa, aku cuma mau kita jadi temen aja', 'sad')
+
+    call talk ('bulan', 'tapi, kita kan udah lebih dari deket', 'sad')
+
+
+    call talk ('bumi', 'maaf Bulan, maaf, aku gabisa...', 'sad')
+
+    call talk ('bulan', '...', 'sad')
+    call talk ('bumi', '...', 'sad')
+    
+    show bumi sad at pos_far_right with chara_move_transition
+    
+    call talk ('bumi', 'sebaiknya kita jaga jarak aja ya, Bulan.', 'sad')
+    call talk ('bumi', 'aku gamau kamu kecewa dan berharap lebih dari ini, maaf...', 'sad')
+
+    call talk ('bulan', '...', 'sad')
+
+    jump s02_narasi

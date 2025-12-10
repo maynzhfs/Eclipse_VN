@@ -1,8 +1,6 @@
 ﻿label start:
 
     call s01_prologue
-
-    jump s02_kafe_pagi
     
     return
 
