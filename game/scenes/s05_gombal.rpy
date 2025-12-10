@@ -1,4 +1,4 @@
-label s05_gombal
+label s05_gombal:
     scene black
 
     call narator ("Hari dan Bulan sedang mengerjakan tugas bersama. Bulan tampak fokus, sementara Hari sesekali mencuri pandang ke arah Bulan sambil tersenyum tipis.")
@@ -28,4 +28,4 @@ label s05_gombal
 
     "Mereka saling melempar senyun dan tertawa kecil, kemudian kembali fokus melanjutkan tugas masing-masing"
 
-    return s06_bumi_ribut
+    jump s06_bumi_ribut

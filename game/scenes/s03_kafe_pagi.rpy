@@ -33,7 +33,7 @@ label s03_kafe_pagi:
     call setExpr(['senja'], 'shock')
     call talk ('bulan', 'yakin ko, kenapa emang?')
 
-    call tal ('senja', 'e-engga sih, cuma sepertinya dia suka sama kamu')
+    call talk ('senja', 'e-engga sih, cuma sepertinya dia suka sama kamu')
 
     call talk ('bulan', 'yaudah, itu kan perasaannya dia, lagipula kita ga bisa atur perasaaan orang lain kan?')
 

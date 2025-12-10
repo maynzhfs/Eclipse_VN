@@ -43,8 +43,7 @@ label s04_ditembak_hari:
         "(yaudah kita pacaran aja)":
             jump s04_terima
 
-label s04_alesan_01
-
+label s04_alesan_01:
     call talk ('bulan', 'Aku gapapa ko kalo misalnya kita jaga jarak, tapi aku gamau kehilangan kamu')
 
     call talk ('hari', 'opsimu cuman ada dua')
@@ -56,7 +55,7 @@ label s04_alesan_01
         "(yaudah kita pacaran aja)":
             jump s04_terima
     
-label s04_alesan_02
+label s04_alesan_02:
 
     call talk ('bulan', 'Aku boros loh, emang kamu yakin bisa menuhi apa yang aku mau?')
 
@@ -68,13 +67,13 @@ label s04_alesan_02
         "(yaudah kita pacaran aja)":
             jump s04_terima
 
-label s04_alesan_03
+label s04_alesan_03:
 
     call talk ('bulan', 'tapi kamu beneran yakin mau sama aku?')
 
     call talk ('hari', 'iya, aku yakin')
     
-label s04_terima
+label s04_terima:
 
     call talk ('bulan', '(yaudah, semoga ini emang jalan yang tepat)')
     call talk ('bulan', 'yaudah, aku mau pacaran sama kamu')
