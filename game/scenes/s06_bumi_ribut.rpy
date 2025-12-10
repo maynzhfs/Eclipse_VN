@@ -1,4 +1,4 @@
-label s06_bumi_ribut
+label s06_bumi_ribut:
     scene black
 
     call narator ("Bulan dan Hari sedang berjalan berdua di koridor kampus, tertawa dan bercanda. Tanpa sadar, ternyata dari kejauhan, Bumi memperhatikan mereka dengan tatapan tidak suka.")
