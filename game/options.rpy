@@ -23,13 +23,22 @@ define gui.show_name = True
 
 ## The version of the game.
 
-define config.version = "1.0"
+define config.version = "0.271225"
 
 
 ## Text that is placed on the game's about screen. Place the text between the
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Maryam Nazhifa Sabila - Story Writer
+\n Maryam Nazhifa Sabila - Programmer
+\n Maryam Nazhifa Sabila - Artist
+
+
+Music & Sfx
+\n {a=https://open.spotify.com/track/6KAIvcYcDBIywRtHVwkbA6?si=24a763e44e454067}find your caffein{/a}
+by .fadzia
+
 """)
 
 

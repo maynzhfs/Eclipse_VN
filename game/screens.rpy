@@ -290,6 +290,9 @@ style quick_button_text:
 screen navigation():
 
     vbox:
+        label "Eclipse"
+        text _("\n\n")
+
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
@@ -319,12 +322,12 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
-
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
             textbutton _("Help") action ShowMenu("help")
+
+        textbutton _("Credits") action ShowMenu("about")
 
         if renpy.variant("pc"):
 
@@ -370,12 +373,6 @@ screen main_menu():
         vbox:
             style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -390,7 +387,7 @@ style main_menu_frame:
     background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
-    xalign 1.0
+    xalign 0.5
     xoffset -30
     xmaximum 1200
     yalign 1.0
@@ -558,14 +555,20 @@ screen about():
 
         vbox:
 
-            label "[config.name!t]"
+            label "Eclipse"
             text _("Version [config.version!t]\n")
 
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]\n"
 
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _p("""
+            Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only] 
+            
+            And {a=https://github.com/MissingRedStudio/MissingRenpy-Framework.git}Missing Renpy Template{/a} by Missing Red Studio
+            
+            \n\n\n\n\n\n\n\n\n #ranggajagobanget #cihuyyy #loplopranggaa
+            """)
 
 
 style about_label is gui_label
