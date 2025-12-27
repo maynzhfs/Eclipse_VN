@@ -1,5 +1,5 @@
-label s3_2_bumi_ribut2:
-    scene sore_belakang_kampus
+label s3_2_bumi_ribut3:
+    scene pagi_belakang_kampus
 
     call narator ('sesampainya Bulan di taman belaang kampus. Bulan melihat Bumi sedang duduk sendiri di sebuah bangku taman, dan Bulan langsung datang menghampirinya')
 
