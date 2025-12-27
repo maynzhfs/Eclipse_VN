@@ -1,24 +1,31 @@
 label s1_4_ditembak_hari:
+    scene black
+
+    call narator ("8 jam kemudian")
     scene malam_depan_kost
 
-    show bulan normal at pos_far_left
+    show bulan normal at pos_far_left_f
     show hari normal at pos_far_right
     with default_chara_transition
 
+    call talk ('hari', 'bulan...',)
     call setExpr (['bulan'], 'shock')
     call talk ('hari', 'mau ga jadi pacarku?', 'happy')
 
     call talk ('bulan', '(LOHHHH)', 'shock')
-    call talk ('bulan', 'eh, maksudmu gimana nih?', 'shock')
+    call setExpr (['hari'], 'normal')
+    call talk ('bulan', 'eh, maksudmu gimana nih?')
 
     call talk ('hari', 'aku pengen menjalani hubungan denganmu, bukan lagi sekedar teman, tapi pacar.')
     call talk ('hari', 'aku pengen mengisi hari-hariku dengan kita berdua.')
 
-    call talk ('bulan', '(waduh, aku gamau pacaran sama Hari)')
-    call talk ('bulan', ' emangnya kamu yakin kalo kita pacaran, kita akan selalu bahagia?')
+    call talk ('bulan', '(waduh, aku gamau pacaran sama Hari)', 'shock')
+    call setExpr (['hari'], 'normal')
+    call talk ('bulan', 'emangnya kamu yakin kalo kita pacaran, kita akan selalu bahagia?')
 
     call talk ('hari', 'justru sebaliknya, buatku pacaran bukan tentang bahagianya doang')
 
+    call setExpr (['hari'], 'normal')
     call talk ('bulan', 'maksudnya tuh gimana?')
 
     call talk ('hari', 'dalam hubungan, ada yang namanya komitmen. Komitmen ini lah yang tetap meyatukan kita, bukan cuma rasa bahagia dan senang.')
@@ -26,10 +33,10 @@ label s1_4_ditembak_hari:
 
     call talk ('bulan', 'hmm, emang kita gabisa tetep seperti ini aja?')
 
-    call talk ('hari', 'satu-satunya yang mengikat kita saat ini adalah game, dan gamenya pun baru aja kita beresin tadi...')
-    call talk ('hari', 'Selain itu, menurutmu apa yang masih mengikat kita berdua?')
+    call talk ('hari', 'satu-satunya yang mengikat kita saat ini adalah game, dan gamenya pun baru aja kita beresin tadi...', 'sad')
+    call talk ('hari', 'Selain itu, menurutmu apa yang masih mengikat kita berdua?', 'sad')
 
-    call talk ('bulan', '...')
+    call talk ('bulan', '...', 'sad')
 
     call talk ('hari', 'Kamu sama Bumi, kalian sekelas, satu organisasi, bahkan satu kerjaan, banyak ikatan yang memberikan alasan kenapa kalian tetap bisa bareng.')
     call talk ('hari', 'Tapi kamu denganku, ga ada ikatan lagi yang tersisa.')
@@ -43,6 +50,7 @@ label s1_4_ditembak_hari:
             jump s1_4_terima
 
 label s1_4_alesan_01:
+    call setExpr (['hari'], 'shock')
     call talk ('bulan', 'Aku gapapa ko kalo misalnya kita jaga jarak, tapi aku gamau kehilangan kamu')
 
     call talk ('hari', 'opsimu cuman ada dua')
@@ -56,6 +64,7 @@ label s1_4_alesan_01:
     
 label s1_4_alesan_02:
 
+    call setExpr (['hari'], 'shock')
     call talk ('bulan', 'Aku boros loh, emang kamu yakin bisa menuhi apa yang aku mau?')
 
     call talk ('hari', 'aku bakal usaha semaksimal mungkin buat itu, itu juga tujuan aku kerja sambilan')
@@ -68,25 +77,25 @@ label s1_4_alesan_02:
 
 label s1_4_alesan_03:
 
-    call talk ('bulan', 'tapi kamu beneran yakin mau sama aku?')
+    call talk ('bulan', 'tapi kamu beneran yakin mau sama aku?', 'sad')
 
     call talk ('hari', 'iya, aku yakin')
     
 label s1_4_terima:
 
-    call talk ('bulan', '(yaudah, semoga ini emang jalan yang tepat)')
-    call talk ('bulan', 'yaudah, aku mau pacaran sama kamu')
+    call talk ('bulan', '(yaudah, semoga ini emang jalan yang tepat)', 'sad')
+    call talk ('bulan', 'yaudah, aku mau pacaran sama kamu', 'blush')
 
     call talk ('hari', 'loh', 'shock')
     call talk ('hari', 'beneran??', 'shock')
 
-    call talk ('bulan', 'iya..', 'angry')
+    call talk ('bulan', 'iya..', 'blush')
 
     call talk ('hari', 'jadi.. kita pacaran nih??')
 
     call talk ('bulan', 'iya, aku terima kamu')
 
-    call setExpr ('bulan', 'happy')
+    call setExpr (['bulan', 'hari'], 'happy')
     call talk ('hari', 'o-oh, makasih ya bulan, tolong temani aku ya Bulan, kita hadapi semua nya bareng-bareng')
 
     jump s2_1_gombal

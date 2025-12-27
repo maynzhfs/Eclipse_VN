@@ -5,21 +5,20 @@ label s1_1_prologue:
     show bumi normal at pos_right 
     with default_chara_transition
 
-    call setExpr(['bumi', 'bulan'], 'normal') 
-
-    call talk ('bulan', 'Bumi..', 'normal')
+    call talk ('bulan', 'Bumi..')
 
     call talk ('bumi', 'ya?', 'normal')
 
-    call talk ('bulan', 'a-aku, aku mau nanya sesuatu')
+    call talk ('bulan', 'a-aku, aku mau nanya sesuatu', 'blush')
 
     call talk ('bumi', 'nanya sesuatu? nanya apa emang?')
 
     call talk ('bulan', 'kita kan udah sering bareng, tugas bareng, main bareng, semuanya bareng...')
     call talk ('bulan', 'Menurutmu, kita ini apa?')
 
+    call talk ('bumi', 'yaa...')
     call setExpr (['bulan'],'shock')
-    call talk ('bumi', 'yaa... kita temen')
+    call talk ('bumi', 'kita cuma temen')
 
     call talk ('bulan', 'ga bisa kah lebih dari itu?', 'sad')
 

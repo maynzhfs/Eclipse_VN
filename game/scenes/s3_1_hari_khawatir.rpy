@@ -37,25 +37,28 @@ label s3_1_hari_khawatir:
 
 label s3_1_langsung:
     
+    show bulan at pos_far_left_f
     call talk ('bulan', 'Mau ngomongin apa ya?')
     call talk ('bumi', 'Kita bicara di taman belakang kampus, aku tunggu disana')
 
     hide bumi normal with default_chara_transition
 
     call talk ('hari', 'Bul, kalau ada apa-apa aku ada disini, jadi jangan terlalu maksain diri ya')
-    call talk ('bumi', 'Iya Hari, makasih ya')
+    call talk ('bulan', 'Iya Hari, makasih ya')
+    jump s3_2_bumi_ribut2
 
 label s3_1_nantiaja:
 
+    show bulan at pos_far_left_f
     call talk ('bulan', 'Kayaknya ga bisa sekarang deh, aku mau pergi dulu. Kalau besok aja gimana?')
-    call talk ('bumi', 'Kalau gitu, besok pagi kita ketemu di taman belakang kampus')
+    call talk ('bumi', 'Kalau gitu, besok pagi kita ketemu di taman belakang kampus', 'sad')
 
     hide bumi normal with default_chara_transition
 
-    call talk ('hari', 'Kamu yakin besok mau dateng?')
+    call talk ('hari', 'Kamu yakin besok mau dateng?', 'sad')
     call talk ('bulan', 'Iya Hari, kenapa emangnya?')
 
     call talk ('hari', 'Gapapa Bul, jangan maksain diri ya, kalau ada apa-apa aku disini')
     call talk ('bulan', 'Iya Hari, makasih ya')
 
-    jump s3_2_bumi_ribut2
+    jump s3_2_bumi_ribut3

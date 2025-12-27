@@ -5,13 +5,14 @@ label s3_3_hari_khawatir2:
 
     scene sore_belakang_kampus
 
-    show hari sad at pos_left
-    show bulan sad at pos_right
+    show bulan sad at pos_left
+    show hari sad at pos_right
 
     call talk ('hari', 'Bul, gimana tadi?')
-    call talk ('bulan', 'Ri.. aku...')
+    show bulan sad at pos_left_f
+    call talk ('bulan', 'Ri.. aku...', 'sad')
 
-    call talk ('hari', 'sini coba cerita gimana aja tadi')
+    call talk ('hari', 'sini coba cerita gimana aja tadi', 'sad')
     
     scene black
 
@@ -19,19 +20,19 @@ label s3_3_hari_khawatir2:
 
     scene sore_belakang_kampus
 
-    show hari normal at pos_left
-    show bulan sad at pos_right
+    show hari normal at pos_right
+    show bulan sad at pos_left_f
 
-    call talk ('bulan', 'katanya yang dia bilang itu semua nya demi aku')
-    call talk ('hari', 'tapi aku ga terima cara dia nyampein itu ke kamu')
-    call talk ('hari', 'dan dia ga berhak buat ngatur hidup kamu')
+    call talk ('bulan', 'katanya yang dia bilang itu semua nya demi aku', 'sad')
+    call talk ('hari', 'tapi aku ga terima cara dia nyampein itu ke kamu', 'sad')
+    call talk ('hari', 'dan dia ga berhak buat ngatur hidup kamu', 'sad')
 
-    call talk ('bulan', 'terus gimana?')
-    call talk ('bulan', 'aku bingung, aku capek, tapi aku...')
+    call talk ('bulan', 'terus gimana?', 'sad')
+    call talk ('bulan', 'aku bingung, aku capek, tapi aku...', 'sad')
 
-    call talk ('hari', 'Bul, sini dengerin aku sebentar')
-    call talk ('hari', 'aku bakal disini, dan aku ga bakal ninggalin kamu cuman karena kamu bingung')
-    call talk ('hari', 'Tapi aku juga ga bisa liat kamu nyakitin diri kamu sendiri, dan jujur aja, aku juga sakit liat kamu kayak gitu')
+    call talk ('hari', 'Bul, sini dengerin aku sebentar', 'sad')
+    call talk ('hari', 'aku bakal disini, dan aku ga bakal ninggalin kamu cuman karena kamu bingung', 'sad')
+    call talk ('hari', 'Tapi aku juga ga bisa liat kamu nyakitin diri kamu sendiri, dan jujur aja, aku juga sakit liat kamu kayak gitu', 'sad')
 
     '(Bulan menoleh)'
 

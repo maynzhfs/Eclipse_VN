@@ -1,6 +1,10 @@
 label s3_netral_ending:
     scene black
 
+    show bulan normal at pos_left_f
+    show senja normal at pos_right
+    with default_chara_transition
+
     call talk ('senja', 'Kamu keliatan beda hari ini.')
 
     call talk ('bulan', 'Aku cuman ngerasa…')
@@ -9,9 +13,9 @@ label s3_netral_ending:
 
     call talk ('senja', ' jadinya kamu mau gimana sekarang?')
 
-    call talk ('bulan', 'aku kayaknya mau diem aja dulu')
-    call talk ('bulan', 'bukan buat apa-apa')
-    call talk ('bulan', 'cuman buat nunggu aja')
+    call talk ('bulan', 'aku kayaknya mau diem aja dulu', 'happy')
+    call talk ('bulan', 'bukan buat apa-apa', 'happy')
+    call talk ('bulan', 'cuman buat nunggu aja', 'happy')
 
     call talk ('senja', 'nunggu buat apa, Bul?')
 

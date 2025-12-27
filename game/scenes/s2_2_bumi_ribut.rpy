@@ -15,7 +15,7 @@ label s2_2_bumi_ribut:
 
     call talk ('bumi', ' bukan urusanmu, Senja', 'angry')
 
-    call talk ('senja', 'Aku tahu kamu cemburu. Tapi tololng jangan ganggu Bulan lagi, dia juga udah bukan urusanmu', 'sad')
+    call talk ('senja', 'Aku tahu kamu cemburu. Tapi tololng jangan ganggu Bulan lagi, dia juga udah bukan urusanmu', 'angry')
 
     "Bumi hanya menghiraukan perkataan Senja dan tetap melangkah"
 
@@ -38,23 +38,29 @@ label s2_2_bumi_ribut:
     show bulan normal at pos_left
     show hari normal at pos_far_left
 
-    call talk('bumi', 'Wah, diliat-liat kalian makin hari makin nempel aja. lagi ngapain nih?') 
+    call talk('bumi', 'Wah, diliat-liat kalian makin hari makin nempel aja. lagi ngapain nih?', 'angry') 
 
-    call talk('bulan', 'Eh, Bumi. Nggak ada apa-apa, kok. Cuma ngobrol biasa.')
+    show bulan at pos_left_f
+    show hari at pos_far_left_f
+    with chara_move_transition
+
+    call talk('bulan', 'Eh, Bumi. Nggak ada apa-apa, kok. Cuma ngobrol biasa.', 'happy')
 
     call talk('hari', 'Iya, santai aja, Bumi.')
 
-    call talk('bumi', 'Oh, gitu. Kirain lagi ngobrolin masa depan berdua. (Melirik Hari dengan sinis)')
+    call setExpr(['hari', 'bulan'], 'shock')
+    call talk('bumi', 'Oh, gitu. Kirain lagi ngobrolin masa depan berdua~', 'angry')
     
+    call setExpr(['hari', 'bumi'], 'angry')
     call talk('bulan', 'Apaan sih, Bumi. Ada apa kamu ke sini?', 'angry')
     
-    call talk('bumi', 'Aku cuma mau ngingetin kamu, Bulan. Hati-hati sama orang baru. Belum tentu sebaik yang kamu kira.')
+    call talk('bumi', 'Aku cuma mau ngingetin kamu, Bulan. Hati-hati sama orang baru. Belum tentu sebaik yang kamu kira.', 'angry')
     call talk('hari', 'Maksudmu apa, Bumi?', 'angry')
-    call talk('bumi', 'Ya gada maksud apa-apa ko. intinya Bulan, jangan lupa sama yang pernah aku bilang dulu.')
+    call talk('bumi', 'Ya gada maksud apa-apa ko. intinya Bulan, jangan lupa sama yang pernah aku bilang dulu.', 'angry')
     call talk('bulan', 'Bumi, cukup! Jangan mulai.', 'angry')
-    call talk('bumi', 'Aku cuma khawatir sama kamu, Bulan. Kamu itu gampang percaya sama orang.')
+    call talk('bumi', 'Aku cuma khawatir sama kamu, Bulan. Kamu itu gampang percaya sama orang.', 'angry')
     call talk('hari', 'Aku nggak akan bikin Bulan sakit hati. Kamu tenang aja.')
-    call talk('bumi', 'Omongan doang gampang, bro. Buktiin nya gimana.')
+    call talk('bumi', 'Omongan doang gampang, bro. Buktiin nya gimana.', 'angry')
 
     call setExpr (['hari', 'bulan', 'bumi'], 'angry')
     'Suasana menjadi tegang. Bulan merasa tidak nyaman dengan situasi ini.'
@@ -68,12 +74,15 @@ label s2_2_bumi_ribut:
     hide bumi with default_chara_transition
     'Bumi pergi dengan tatapan penuh arti. Bulan menatap kepergian Bumi dengan perasaan campur aduk.'
 
-    show hari at pos_left
-    show bulan sad at pos_right
+    show hari at pos_left_f
+    show bulan sad at pos_right_f
     with chara_move_transition
+
+    show hari at pos_left_f
+    show bulan sad at pos_right
     call talk('hari', 'Kamu gapapa Bulan?')
     call talk('bulan', 'Aku... aku nggak tahu, Ri. Kenapa Bumi jadi gini?', 'sad')
-    call talk('hari', 'Dia cuma cemburu, Bul. Kamu jangan terlalu dipikirin. Aku ada di sini buat kamu.')
+    call talk('hari', 'Dia cuma cemburu, Bul. Kamu jangan terlalu dipikirin. Aku ada di sini buat kamu.', 'happy')
 
     'Hari menggenggam tangan Bulan, mencoba menenangkannya. Bulan membalas genggaman tangan Hari, namun pikirannya masih kalut.'
 

@@ -34,7 +34,7 @@ define pos_far_right_f = chara_pos_f(1.0)
 define standard_expressions = [
     "normal", "happy", "laugh", "blush", "shock", "angry",
     "sad", "anxious", "ponder", "bored", "eyes_closed", "smile", 
-    "cry", "scared", "surprise_p", "disappoint"
+    "cry", "scared", "surprise_p", "disappoint", 'confuse'
 ]
 
 transform trans_dim:

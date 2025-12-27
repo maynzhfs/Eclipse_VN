@@ -1,7 +1,7 @@
 label s3_4:
     scene black
 
-    show bulan sad at pos_left
+    show bulan sad at pos_left_f
     show senja normal at pos_right
     with default_chara_transition
 
