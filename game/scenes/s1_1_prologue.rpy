@@ -1,8 +1,9 @@
 label s1_1_prologue:
-    scene sore_belakang_kampus
+    scene sore_belakang_kampus with default_bg_transition
 
-    show bulan normal at pos_left
-    show bumi normal at pos_right
+    show bulan normal at pos_left_f
+    show bumi normal at pos_right 
+    with default_chara_transition
 
     call setExpr(['bumi', 'bulan'], 'normal') 
 
@@ -32,7 +33,7 @@ label s1_1_prologue:
     call talk ('bulan', '...', 'sad')
     call talk ('bumi', '...', 'sad')
     
-    show bumi sad at pos_far_right with chara_move_transition
+    show bumi sad at pos_far_right_f with chara_move_transition
 
     call talk ('bumi', 'sebaiknya kita jaga jarak aja ya, Bulan.', 'sad')
     call talk ('bumi', 'aku gamau kamu kecewa dan berharap lebih dari ini, maaf...', 'sad')
