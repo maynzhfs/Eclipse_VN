@@ -1,6 +1,6 @@
 ﻿label start:
 
-    call s01_prologue
+    call s1_1_prologue
     
     return
 

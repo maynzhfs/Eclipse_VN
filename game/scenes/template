@@ -1,0 +1,39 @@
+label s03_enggaKo:
+    call setExpr(['senja'], 'happy')
+    call talk('bulan', 'engga koo', 'happy')
+
+    show bulan normal at pos_center
+    show senja normal at pos_far_right 
+    with chara_move_transition
+    show hari normal at pos_far_left with default_chara_transition
+    
+    call setExpr(['bulan', 'senja'], 'normal')
+    call talk('hari', "HALO GESS", 'happy')
+
+    call talk('senja', "halooo", 'happy')
+    call talk('bulan', "ada apa luwh?", 'happy')
+
+    call setExpr(['senja', 'bulan'], 'shock')
+    call talk('hari', 'mau jajan gw, GAS IKUT?', 'happy')
+
+    call setExpr(['senja', 'bulan', 'hari'], 'happy', True)
+    all "GAS!!!"
+
+    call setExpr(['hari', 'bulan'], 'shock')
+    call talk('senja', 'ehh, aku udah dijemput ternyata...', 'sad')
+
+    call talk('hari', 'yasudahlah, gimana lagii', 'normal')
+    call talk ('bulan', 'tiati yaa, senja', 'happy')
+
+    call talk('senja', 'iyaaa, aku duluan yaaa', 'happy')
+
+    hide senja with default_chara_transition
+    
+    show hari normal at pos_left
+    show bulan normal at pos_right
+    with chara_move_transition
+
+    call talk('hari', 'yaudah, kita berdua aja gas?', 'happy')
+    call talk('bulan', 'GAS!', 'happy')
+
+    jump endGame

@@ -1,5 +1,5 @@
-label s01_prologue:
-    scene black
+label s1_1_prologue:
+    scene sore_belakang_kampus
 
     show bulan normal at pos_left
     show bumi normal at pos_right
@@ -33,10 +33,10 @@ label s01_prologue:
     call talk ('bumi', '...', 'sad')
     
     show bumi sad at pos_far_right with chara_move_transition
-    
+
     call talk ('bumi', 'sebaiknya kita jaga jarak aja ya, Bulan.', 'sad')
     call talk ('bumi', 'aku gamau kamu kecewa dan berharap lebih dari ini, maaf...', 'sad')
 
     call talk ('bulan', '...', 'sad')
 
-    jump s02_narasi
+    jump s1_2_narasi

@@ -1,11 +1,12 @@
-label s04_ditembak_hari:
-    scene black
+label s1_4_ditembak_hari:
+    scene malam_depan_kost
 
     show bulan normal at pos_far_left
     show hari normal at pos_far_right
+    with default_chara_transition
 
     call setExpr (['bulan'], 'shock')
-    call talk ('hari', 'mau ga jadi pacarku?')
+    call talk ('hari', 'mau ga jadi pacarku?', 'happy')
 
     call talk ('bulan', '(LOHHHH)', 'shock')
     call talk ('bulan', 'eh, maksudmu gimana nih?', 'shock')
@@ -35,15 +36,13 @@ label s04_ditembak_hari:
     call talk ('hari', 'Aku mau kita tetap seperti sekarang, tapi sepertinya gabisa, aku punya banyak hal lain yang harus kuurus. Aku mau fokus dengan apa yang memang terikat denganku, yang sudah menjadi kewajibanku juga.')
     call talk ('hari', 'Makannya, aku mau kita terikat bukan lagi hanya sebagai teman, supaya aku tetap punya alasan yang konkrit untuk tetap menyediakan ruang di kepalaku yang semuanya diisi oleh kamu.')
 
-    call setExpr (['bulan'])
-
     menu:
         "(duhh, gimana nih?)":
-            jump s04_alesan_01
+            jump s1_4_alesan_01
         "(yaudah kita pacaran aja)":
-            jump s04_terima
+            jump s1_4_terima
 
-label s04_alesan_01:
+label s1_4_alesan_01:
     call talk ('bulan', 'Aku gapapa ko kalo misalnya kita jaga jarak, tapi aku gamau kehilangan kamu')
 
     call talk ('hari', 'opsimu cuman ada dua')
@@ -51,11 +50,11 @@ label s04_alesan_01:
 
     menu:
         "(alesan apa lagi ya?)":
-            jump s04_alesan_02
+            jump s1_4_alesan_02
         "(yaudah kita pacaran aja)":
-            jump s04_terima
+            jump s1_4_terima
     
-label s04_alesan_02:
+label s1_4_alesan_02:
 
     call talk ('bulan', 'Aku boros loh, emang kamu yakin bisa menuhi apa yang aku mau?')
 
@@ -63,25 +62,25 @@ label s04_alesan_02:
 
     menu:
         "(hmm)":
-            jump s04_alesan_03
+            jump s1_4_alesan_03
         "(yaudah kita pacaran aja)":
-            jump s04_terima
+            jump s1_4_terima
 
-label s04_alesan_03:
+label s1_4_alesan_03:
 
     call talk ('bulan', 'tapi kamu beneran yakin mau sama aku?')
 
     call talk ('hari', 'iya, aku yakin')
     
-label s04_terima:
+label s1_4_terima:
 
     call talk ('bulan', '(yaudah, semoga ini emang jalan yang tepat)')
     call talk ('bulan', 'yaudah, aku mau pacaran sama kamu')
 
-    call talk ('hari', 'loh')
-    call talk ('hari', 'benran??')
+    call talk ('hari', 'loh', 'shock')
+    call talk ('hari', 'beneran??', 'shock')
 
-    call talk ('bulan', 'iya..')
+    call talk ('bulan', 'iya..', 'angry')
 
     call talk ('hari', 'jadi.. kita pacaran nih??')
 
@@ -90,4 +89,4 @@ label s04_terima:
     call setExpr ('bulan', 'happy')
     call talk ('hari', 'o-oh, makasih ya bulan, tolong temani aku ya Bulan, kita hadapi semua nya bareng-bareng')
 
-    jump s05_gombal
+    jump s2_1_gombal

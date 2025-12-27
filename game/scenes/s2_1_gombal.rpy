@@ -1,7 +1,9 @@
-label s05_gombal:
+label s2_1_gombal:
     scene black
 
     call narator ("Hari dan Bulan sedang mengerjakan tugas bersama. Bulan tampak fokus, sementara Hari sesekali mencuri pandang ke arah Bulan sambil tersenyum tipis.")
+
+    scene pagi_depan_kost
 
     show bulan normal at pos_far_left
     show hari normal at pos_far_right
@@ -26,6 +28,7 @@ label s05_gombal:
 
     call talk ('bulan', 'ish!')
 
+    call setExpr (['bulan', 'hari'], 'happy')
     "Mereka saling melempar senyun dan tertawa kecil, kemudian kembali fokus melanjutkan tugas masing-masing"
 
-    jump s06_bumi_ribut
+    jump s2_2_bumi_ribut

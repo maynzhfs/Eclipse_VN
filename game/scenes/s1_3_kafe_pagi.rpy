@@ -1,4 +1,4 @@
-label s03_kafe_pagi:
+label s1_3_kafe_pagi:
     call play_ambience("audio/restaurant_ambience.mp3", volume=0.1, fade_time = 3.0)
     call play_music("audio/find your cafein_bgm.mp3", fade_time = 2.0)
 
@@ -7,6 +7,7 @@ label s03_kafe_pagi:
     # SETUP AWAL SCENE
     show bulan normal at pos_left
     show senja normal at pos_right
+    with default_chara_transition
     
     call setExpr(['senja', 'bulan'], 'normal') 
     
@@ -45,5 +46,5 @@ label s03_kafe_pagi:
 
     call talk ('bulan', 'Sudahlah, kalopun dia suka padaku, aku yakin dia ga bakal nembak juga')
 
-    jump s04_ditembak_hari
+    jump s1_4_ditembak_hari
 
