@@ -1,4 +1,4 @@
-label:
+label s3_bad_ending:
     scene black
 
     show senja normal at pos_left
@@ -34,8 +34,33 @@ label:
 
     call talk ('hari', 'kalau maumu begitu, Aku nggak sanggup, Bul, maaf.')
 
-    hide hari with chara_move_transition
+    hide hari with default_chara_transition
 
-    call talk ('bulan', 'Hari… tunggu—!')
+    call talk ('bulan', 'Hari… tunggu—!', 'sad')
 
-    call
+    call talk ('bumi', 'harusnya dari awal kamu dengerin aku,dan ini ga bakal berakhir kayak gini')
+
+    call talk ('bulan', ' Kenapa kamu harus ngomong gitu?!', 'sad')
+
+    call talk ('bumi', 'Aku cuman bilang jujur')
+
+    call talk ('bulan', 'Jujur? Sejak kapan perkataan kamu bikin keadaan jadi lebih baik?!')
+
+    show bumi at pos_right
+    with default_chara_transition
+
+    call talk ('bumi', 'Kamu nggak baik-baik aja, Bulan.')
+
+    call talk ('bulan', 'IYA! AKU MEMANG NGGAK BAIK-BAIK AJA!')
+    call talk ('bulan', 'Dan kamu cuma bikin semuanya makin berat!')
+
+    call talk ('bulan', 'Kalau kamu masih mau ngatur hidupku—')
+    call talk ('bulan', 'PERGI AJA—')
+
+    '(Bumi tersentak, dan akhirnya dia memutuskan untuk meninggalkan Bulan di tengah tangisannya yang mulai pecah)'
+
+    hide bumi with default_chara_transition
+
+    show bulan sad at pos_center
+
+    jump badEnd

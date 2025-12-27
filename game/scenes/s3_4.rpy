@@ -1,8 +1,9 @@
-label:
+label s3_4:
     scene black
 
     show bulan sad at pos_left
     show senja normal at pos_right
+    with default_chara_transition
 
     call talk ('bulan', 'Ja...', 'sad')
     call talk ('senja', 'kenapa lagi Bul?', 'normal')
@@ -16,7 +17,7 @@ label:
     call talk ('bulan', 'iya Ja...', 'sad')
 
     call talk ('senja', 'kalau saran aku, kamu perlu cut-off sama dia. supaya dia sadar dan belajar', 'normal')
-    call talk ('bula', 'tapi Ja, kayak.. dia juga temen aku dan udah banyak bantu aku juga, emng ga ada ya jalan lain?', 'sad')
+    call talk ('bulan', 'tapi Ja, kayak.. dia juga temen aku dan udah banyak bantu aku juga, emng ga ada ya jalan lain?', 'sad')
 
     call talk ('senja', 'menurutku agak susah Bul, karena kamu mau tetep sama Hari dengan keadaan Bumi begitu', 'normal')
     call talk ('bulan', 'tapi aku sebenarnya masih pengen temenan sama Bumi, gimanapun dia tetep temen aku', 'sad')
