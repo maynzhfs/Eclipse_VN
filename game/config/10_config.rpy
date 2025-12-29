@@ -32,7 +32,7 @@ define pos_far_left_f  = chara_pos_f(0.0)
 define pos_far_right_f = chara_pos_f(1.0)
 
 define standard_expressions = [
-    "normal", "happy", "laugh", "blush", "shock", "angry",
+    "normal", "talking", "happy", "laugh", "blush", "shock", "angry",
     "sad", "anxious", "ponder", "bored", "eyes_closed", "smile", 
     "cry", "scared", "surprise_p", "disappoint", 'confuse'
 ]
@@ -104,12 +104,19 @@ label setExpr(characters=[], expression="normal", isTalking=False):
     $ setExpr_logic(characters, expression, isTalking)
     return
 
-label talk(character_tag, dialogue_text, expression="normal"):
+label talk(character_tag, dialogue_text, expression="talking"):
     call setExpr([character_tag], expression, True)
     
     $ renpy.say(getattr(renpy.store, character_tag), dialogue_text) 
 
-    call setExpr([character_tag], expression, False)
+    $ charExpression = expression
+    
+    python:
+
+        if charExpression == "talking":
+            charExpression = "normal"
+
+    call setExpr([character_tag], charExpression, False)
     return
 
 label narator(text_to_display, duration=5.0, transition=Dissolve(0.5)):
