@@ -1,5 +1,5 @@
 label s3_4:
-    scene black
+    scene kafe_siang
 
     show bulan sad at pos_left_f
     show senja normal at pos_right

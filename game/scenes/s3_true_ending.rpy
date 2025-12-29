@@ -1,5 +1,5 @@
 label s3_true_ending:
-    scene black
+    scene pagi_depan_kost
 
     show bulan normal at pos_left_f
     show senja normal at pos_right
@@ -28,6 +28,8 @@ label s3_true_ending:
     scene black
 
     call narator ('(Bulan menghubungi Bumi dan mengajaknya ketemuan di koridor.)')
+
+    scene koridor_kampus
 
     show bulan normal at pos_right
     show bumi normal at pos_left

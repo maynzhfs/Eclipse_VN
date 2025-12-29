@@ -1,5 +1,5 @@
 label s3_bad_ending:
-    scene black
+    scene pagi_depan_kost
 
     show senja normal at pos_left_f
     show bulan normal at pos_right
@@ -13,6 +13,8 @@ label s3_bad_ending:
     hide senja bulan with default_chara_transition
 
     'akhirnya, Bulan menghubungi Bumi dan Hari dan mereka bertemu di koridor kampus. suasana ruangan terasa tegang'
+
+    scene koridor_kampus
 
     show bulan at pos_far_left_f
     show hari sad at pos_center

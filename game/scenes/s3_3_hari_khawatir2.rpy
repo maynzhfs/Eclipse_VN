@@ -55,4 +55,8 @@ label s3_3_hari_khawatir2:
     'bahkan orang yang paling peduli pun punya batas'
     'dan batas itu sekarang ada di tanganku'
 
+    hide bulan 
+    hide hari
+    with default_chara_transition
+
     jump s3_4

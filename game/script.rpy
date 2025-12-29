@@ -25,7 +25,11 @@ label trueEnd:
     hide all with None
 
     scene black with Dissolve(2.0)
-    call narator("— INI TRUE ENDING —", duration=5.0)
+    call narator( 'Aku akhirnya mengerti. \n'
+    'Meninggalkan bukan berarti kehilangan. \n'
+    'Kadang, itu cuma caraku untuk tetap hidup… dan tetap mencintai. \n'
+    , duration=5.0
+    )
     return
 
 label neutralEnd:
@@ -36,7 +40,13 @@ label neutralEnd:
     hide all with None
 
     scene black with Dissolve(2.0)
-    call narator("— INI NEUTRAL ENDING —", duration=5.0)
+    call narator('Aku tidak memilih siapa pun. \n'
+    'Aku memilih waktu. \n'
+    '\n'
+    'Bukan untuk menghilang. \n'
+    'Tapi untuk bernapas. \n'
+    , duration=5.0
+    )
     return
 
 label badEnd:
@@ -47,5 +57,14 @@ label badEnd:
     hide all with None
 
     scene black with Dissolve(2.0)
-    call narator("— INI BAD ENDING —", duration=5.0)
+    call narator('Aku ingin menyatukan mereka.'
+    'Tapi emosiku menghancurkan segalanya. \n'
+    '\n'
+    'Hari pergi karena hatinya patah. \n'
+    'Bumi pergi karena aku yang mengusirnya. \n'
+    '\n'
+    'Dan untuk pertama kalinya… \n'
+    'aku benar-benar sendirian. \n'
+    , duration=5.0
+    )
     return

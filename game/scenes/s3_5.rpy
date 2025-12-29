@@ -3,6 +3,7 @@ label s3_5:
 
     call narator ('Suara kota jauh. Angin pelan. Bulan sendirian.')
 
+    scene kamar_kost
     show bulan sad at pos_center
 
     call talk ('bulan', 'Aku capek, \n' 
@@ -12,8 +13,12 @@ label s3_5:
     
     hide bulan
     with default_chara_transition
+
+    scene black
     
     call narator ('Bulan menatap tangannya.')
+
+    scene kamar_kost
 
     show bulan sad at pos_center
 
@@ -24,8 +29,12 @@ label s3_5:
     hide bulan
     with default_chara_transition
 
+    scene black
+
     call narator ('(Notifikasi masuk — dari Hari. Tidak dibuka.)')
     call narator ('(Notifikasi masuk — dari Bumi. Tidak dibuka.)')
+
+    scene kamar_kost
 
     show bulan normal at pos_center
 

@@ -1,5 +1,5 @@
 label s3_netral_ending:
-    scene black
+    scene pagi_depan_kost
 
     show bulan normal at pos_left_f
     show senja normal at pos_right

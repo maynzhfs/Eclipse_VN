@@ -1,13 +1,13 @@
 label s3_1_hari_khawatir:
     scene black
 
-    'Beberapa hari telah berlalu, Bulan dan Hari semakin dekat, dan Bulan mulai melupakan apa yang kemarin-kemarin Bumi lakukan. Yaa, dia mencoba mengganggap itu cuman angin yang berlalu'
-    'Dan seperti biasa, setelah kelas berakhir aku menemui Hari yang udah menunggu di koridor kampus'
+    call narator ('Beberapa hari telah berlalu, Bulan dan Hari semakin dekat, dan Bulan mulai melupakan apa yang kemarin-kemarin Bumi lakukan. Yaa, dia mencoba mengganggap itu cuman angin yang berlalu')
+    call narator ('Dan seperti biasa, setelah kelas berakhir aku menemui Hari yang udah menunggu di koridor kampus')
 
     scene koridor_kampus
 
     show hari happy at pos_right
-    show bulan normal at pos_left
+    show bulan normal at pos_left_f
 
     call talk ('hari', 'Udah beres kelas?', 'normal')
     call talk ('bulan', 'Udahh~', 'happy')
@@ -36,7 +36,7 @@ label s3_1_hari_khawatir:
             jump s3_1_nantiaja
 
 label s3_1_langsung:
-    
+
     show bulan at pos_far_left_f
     call talk ('bulan', 'Mau ngomongin apa ya?')
     call talk ('bumi', 'Kita bicara di taman belakang kampus, aku tunggu disana')
@@ -45,6 +45,7 @@ label s3_1_langsung:
 
     call talk ('hari', 'Bul, kalau ada apa-apa aku ada disini, jadi jangan terlalu maksain diri ya')
     call talk ('bulan', 'Iya Hari, makasih ya')
+
     jump s3_2_bumi_ribut2
 
 label s3_1_nantiaja:
@@ -55,7 +56,7 @@ label s3_1_nantiaja:
 
     hide bumi normal with default_chara_transition
 
-    call talk ('hari', 'Kamu yakin besok mau dateng?', 'sad')
+    call talk ('hari', 'Kamu yakin besok mau dateng?','sad')
     call talk ('bulan', 'Iya Hari, kenapa emangnya?')
 
     call talk ('hari', 'Gapapa Bul, jangan maksain diri ya, kalau ada apa-apa aku disini')
