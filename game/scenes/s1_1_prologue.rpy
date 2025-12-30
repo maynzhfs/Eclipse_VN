@@ -1,5 +1,7 @@
 label s1_1_prologue:
     scene sore_belakang_kampus with default_bg_transition
+    
+    call play_music("audio/Emotional Background.mp3", fade_time = 2.0)
 
     show bulan normal at pos_left_f
     show bumi normal at pos_right 
@@ -7,7 +9,7 @@ label s1_1_prologue:
 
     call talk ('bulan', 'Bumi..')
 
-    call talk ('bumi', 'ya?', 'normal')
+    call talk ('bumi', 'ya?')
 
     call talk ('bulan', 'a-aku, aku mau nanya sesuatu', 'blush')
 

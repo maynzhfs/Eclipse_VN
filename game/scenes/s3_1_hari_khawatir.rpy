@@ -3,6 +3,7 @@ label s3_1_hari_khawatir:
 
     call narator ('Beberapa hari telah berlalu, Bulan dan Hari semakin dekat, dan Bulan mulai melupakan apa yang kemarin-kemarin Bumi lakukan. Yaa, dia mencoba mengganggap itu cuman angin yang berlalu')
     call narator ('Dan seperti biasa, setelah kelas berakhir aku menemui Hari yang udah menunggu di koridor kampus')
+    call stop_music()
 
     scene koridor_kampus
 

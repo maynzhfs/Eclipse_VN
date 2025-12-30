@@ -1,8 +1,11 @@
 label s1_4_ditembak_hari:
     scene black
+    call stop_ambience()
 
     call narator ("8 jam kemudian")
     scene malam_depan_kost
+    
+    call play_music("audio/'Childhood' by nostalgic-sound.mp3", fade_time = 2.0)
 
     show bulan normal at pos_far_left_f
     show hari normal at pos_far_right

@@ -14,7 +14,7 @@ label s2_3_bulan_melamun:
     show bulan sad at pos_left_f with chara_move_transition
     'Bulan membaca pesan itu, lalu menghela napas. Tak lama, pesan lain masuk dari Hari.'
     
-    show bulan normal at pos_far_left_f with chara_move_transition
+    show bulan sad at pos_far_left_f with chara_move_transition
     show hari normal at pos_far_right
     with default_chara_transition
     call talk('hari', 'Bul, kamu lagi apa? Jangan mikirin omongan Bumi, ya. Aku sayang sama kamu.')
@@ -23,7 +23,7 @@ label s2_3_bulan_melamun:
     show bulan sad at pos_left_f with chara_move_transition
     'Bulan bingung harus membalas yang mana. Dia merasa terjebak di antara keduanya, dan akhirnya Bulan memutuskan untuk menelepon Senja'
     
-    show bulan normal at pos_far_left_f with chara_move_transition
+    show bulan sad at pos_far_left_f with chara_move_transition
     show senja normal at pos_far_right
     with default_chara_transition
 

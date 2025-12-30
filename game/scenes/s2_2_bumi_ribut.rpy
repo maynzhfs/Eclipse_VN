@@ -3,11 +3,15 @@ label s2_2_bumi_ribut:
 
     call narator ("Bulan dan Hari sedang berjalan berdua di koridor kampus, tertawa dan bercanda. Tanpa sadar, ternyata dari kejauhan, Bumi memperhatikan mereka dengan tatapan tidak suka.")
 
+    call stop_music()
+
     call narator ("Sementara itu, Bumi mempercepat langkahnya, berniat menghampiri Hari dan Bulan. Namun, Senja tiba-tiba saja datang dan menahannya")
 
     scene koridor_kampus
     show bumi angry at pos_left
     show senja normal at pos_right
+
+    call play_music("audio/distant candle light.mp3", fade_time = 2.0)
 
     call setExpr ('bumi', 'angry')
 
@@ -15,7 +19,7 @@ label s2_2_bumi_ribut:
 
     call talk ('bumi', ' bukan urusanmu, Senja', 'angry')
 
-    call talk ('senja', 'Aku tahu kamu cemburu. Tapi tololng jangan ganggu Bulan lagi, dia juga udah bukan urusanmu', 'angry')
+    call talk ('senja', 'Aku tahu kamu cemburu. Tapi tolong jangan ganggu Bulan lagi, dia juga udah bukan urusanmu', 'angry')
 
     "Bumi hanya menghiraukan perkataan Senja dan tetap melangkah"
 
