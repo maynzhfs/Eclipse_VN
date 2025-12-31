@@ -7,6 +7,8 @@ label s3_2_bumi_ribut2:
     show bulan normal at pos_right
     show bumi normal at pos_far_left_f
 
+    call play_music ("audio/Angry background music.mp3", fade_time = 2.0)
+
     call talk ('bulan', 'Jadi kamu mau ngomong apa?', 'sad')
 
     '(Bumi menatap Bulan cukup lama sebelum bicara.)'
@@ -34,6 +36,8 @@ label s3_2_bumi_ribut2:
     call talk ('bumi', 'Supaya kamu ga salah ambil ambil jalan', 'sad')
 
     '(Bulan terdiam, tidak menjawab)'
+
+    call change_music("audio/Emotional Background.mp3", fade_time = 2.0)
 
     call setExpr('bulan', 'sad')
 

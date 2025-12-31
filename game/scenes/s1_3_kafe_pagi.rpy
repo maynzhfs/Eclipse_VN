@@ -1,7 +1,6 @@
 label s1_3_kafe_pagi:
-    call play_ambience("audio/restaurant_ambience.mp3", volume=0.1, fade_time = 10.0)
-    # call change_music("audio/find your cafein_bgm.mp3", fade_time = 10.0)
-    call stop_music()
+    call play_ambience("audio/restaurant_ambience.mp3", volume=0.1, fade_time = 3.0)
+    call play_music("audio/find your cafein_bgm.mp3", fade_time = 2.0)
 
     scene kafe_siang 
     

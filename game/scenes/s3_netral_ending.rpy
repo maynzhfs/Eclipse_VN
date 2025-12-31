@@ -5,6 +5,8 @@ label s3_netral_ending:
     show senja normal at pos_right
     with default_chara_transition
 
+    call change_music("audio/Hopeful Happy Ending Music - Dawn of Life.mp3",fade_time = 2.0)
+
     call talk ('senja', 'Kamu keliatan beda hari ini.')
 
     call talk ('bulan', 'Aku cuman ngerasa…')

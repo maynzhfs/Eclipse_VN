@@ -3,6 +3,8 @@ label s3_3_hari_khawatir3:
 
     call narator ("Bulan masih terdiam di tempat duduknya itu, kemudian Hari menghampirinya")
 
+    call change_music("audio/Emotional Background.mp3",fade_time = 2.0)
+
     scene pagi_belakang_kampus
 
     show bulan sad at pos_left
@@ -55,7 +57,8 @@ label s3_3_hari_khawatir3:
     'bahkan orang yang paling peduli pun punya batas'
     'dan batas itu sekarang ada di tanganku'
 
-    hide bulan hari
+    hide bulan
+    hide hari
     with default_chara_transition
 
     jump s3_4

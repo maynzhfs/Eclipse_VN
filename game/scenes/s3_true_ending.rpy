@@ -5,6 +5,8 @@ label s3_true_ending:
     show senja normal at pos_right
     with default_chara_transition
 
+    call change_music("audio/By Daylight.mp3", fade_time = 2.0)
+
     call talk ('senja', 'Kamu kelihatan tenang, Bul')
     call talk ('senja', 'tapi aku tau, kamu lagi nahan banyak hal.')
     call talk ('bulan', 'Aku capek, Ja...', 'sad')

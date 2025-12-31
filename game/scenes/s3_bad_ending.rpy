@@ -5,6 +5,8 @@ label s3_bad_ending:
     show bulan normal at pos_right
     with default_chara_transition
 
+    call change_music("audio/Sad Epic Emotional Music - Farewell Life.mp3",fade_time = 2.0)
+
     call talk ('senja', 'Kamu yakin mau ngomong ke mereka berdua sekaligus?')
     call talk ('bulan', 'Kalau aku jujur… semuanya pasti baik-baik aja, kan?', 'sad')
 

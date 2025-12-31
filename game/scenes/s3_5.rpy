@@ -1,5 +1,8 @@
 label s3_5:
     scene black
+    call stop_ambience
+    call change_music("audio/distant candle light.mp3", fade_time = 2.0)
+
 
     call narator ('Suara kota jauh. Angin pelan. Bulan sendirian.')
 

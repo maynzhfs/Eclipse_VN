@@ -1,6 +1,8 @@
 label s2_4_ngobrol_di_kafe:
     scene black
 
+    call change_music("audio/find your cafein_bgm.mp3",fade_time = 2.0)
+
     call narator ("keesokannya...")
 
     scene kafe_siang

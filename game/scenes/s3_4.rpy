@@ -1,4 +1,7 @@
 label s3_4:
+    call play_ambience("audio/restaurant_ambience.mp3", volume=0.1, fade_time = 3.0)
+    call play_music("audio/find your cafein_bgm.mp3", fade_time = 2.0)
+
     scene kafe_siang
 
     show bulan sad at pos_left_f

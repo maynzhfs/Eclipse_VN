@@ -5,6 +5,8 @@ label s3_1_hari_khawatir:
     call narator ('Dan seperti biasa, setelah kelas berakhir aku menemui Hari yang udah menunggu di koridor kampus')
     call stop_music()
 
+    call change_music("audio/'Childhood' by nostalgic-sound.mp3", fade_time = 2.0)
+
     scene koridor_kampus
 
     show hari happy at pos_right

@@ -3,6 +3,8 @@ label s3_3_hari_khawatir2:
 
     call narator ("Bulan masih terdiam di tempat duduknya itu, kemudian Hari menghampirinya")
 
+    # call change_music("audio/Emotional Background.mp3", fade_time = 2.0)
+
     scene sore_belakang_kampus
 
     show bulan sad at pos_left
